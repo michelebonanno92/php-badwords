@@ -7,46 +7,46 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP-BADWORDS</title>
-</head>
-<body>
-     
-    <header>
-        <h1>
-            PHP-BADWORDS
-        </h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sending Data</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1>
+                PHP-BADWORDS
+            </h1>
+        </header>
 
-    <main>
-        <form action="" method="GET">
-            <div>
+        <main>
+            <form action="" method="GET">
                 <div>
-                   <label for="paragraph">
-                        Paragrafo
-                   </label>
+                    <div>
+                    <label for="paragraph">
+                            Paragrafo
+                    </label>
+                    </div>
+                    <textarea name="paragraph" id="paragraph" placeholder="Inserisci il tuo testo..."></textarea>
                 </div>
-                <textarea name="testo" id="paragraph" placeholder="Inserisci il tuo testo..."></textarea>
-            </div>
 
-            <div>
                 <div>
-                   <label for="badword">
-                        Parola da censurare
-                   </label>
+                    <div>
+                    <label for="badword">
+                            Parola da censurare
+                    </label>
+                    </div>
+                    <input type="text" name="badword" id="badword" placeholder="Inserisci il tuo testo...">
                 </div>
-                <input type="text" name="parolaCensurata" id="badword" placeholder="Inserisci il tuo testo...">
-            </div>
 
-            <div>
-                <button type="submit">
-                    INVIA
-                </button>
-            </div>
-        </form>
-    </main>
+                <div>
+                    <button type="submit">
+                        INVIA
+                    </button>
+                </div>
+            </form>
+        </main>
 
-</body>
+    </body>
 </html>
