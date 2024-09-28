@@ -14,8 +14,6 @@
             Ciao Mondo
         </h1>
 
-        <p>
-            Io sono <?php echo $nome $cognome ?>
-        </p>
+      
 </body>
 </html>
