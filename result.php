@@ -51,6 +51,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
                 <div>
                     Paragrafo censurato :
                     <p>
+                                <!--  str_replace(porzioneDaSosituire, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore -->
                         
                         <?php 
                             $paragafoCensurato = str_replace($_GET['badword'], '***',$_GET['paragraph']); 
@@ -62,7 +63,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
                 <div>
                    Lungheza del Paragrafo  censurato:
                     <p>
-                    <?php echo strlen($paragafoCensurato); ?> 
+                        <?php echo strlen($paragafoCensurato); ?> 
                     </p> 
                 </div>
                 <br>
@@ -83,7 +84,6 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 
         </script>
 
-        <!--  str_replace(porzioneDaSosituire, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore -->
 
     </body>
 </html>
