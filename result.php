@@ -75,7 +75,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
             const censureParag = parag.replaceAll('ciao', '***');
 
             console.log('parag:' , parag , parag.length);
-            console.log('parola da censurare', censureParag, censureParag.length)
+            console.log('parola da censurare', censureParag, censureParag.length);
 
         </script>
 
