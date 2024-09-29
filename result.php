@@ -51,8 +51,12 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
                 <div>
                     Paragrafo censurato :
                     <p>
-                        <?php echo str_replace($_GET['badword'], '***',$_GET['paragraph'] ); ?> 
-                        <?php $paragafoCensurato = str_replace($_GET['badword'], '***',$_GET['paragraph'] ); ?>
+                        
+                        <?php 
+                            $paragafoCensurato = str_replace($_GET['badword'], '***',$_GET['paragraph']); 
+
+                            echo  $paragafoCensurato;
+                        ?>
                     </p> 
                 </div>
                 <div>
@@ -79,7 +83,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 
         </script>
 
-        <!--  str_replace(porzioneDaModificare, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore -->
+        <!--  str_replace(porzioneDaSosituire, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore -->
 
     </body>
 </html>
