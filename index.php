@@ -21,35 +21,26 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
         </header>
 
         <main>
-            <div>
-                <div>
-                    Valore precedente di paragrafo : <?php echo $_GET['paragraph']; ?> 
-                </div>
-            </div>
-            <div>
-                <div>
-                    Valore precedente di parola da censurare : <?php echo $_GET['badword']; ?> 
-                </div>
-            </div>
-            <form action="" method="GET">
+            
+            <form action="./result.php" method="GET">
                 <div>
                     <div>
                         <label for="paragraph">
                             Paragrafo
                         </label>
                     </div>
-                    <textarea name="paragraph" id="paragraph" placeholder="Inserisci il tuo testo..."></textarea>
+                    <textarea name="paragraph" id="paragraph" placeholder="Inserisci il tuo testo"></textarea>
                 </div>
-
+                <br>
                 <div>
                     <div>
                         <label for="badword">
                             Parola da censurare
                         </label>
                     </div>
-                    <input type="text" name="badword" id="badword" placeholder="Inserisci il tuo testo...">
+                    <input type="text" name="badword" id="badword" placeholder="Inserisci il tuo testo..." >
                 </div>
-
+                <br>
                 <div>
                     <button type="submit">
                         INVIA
