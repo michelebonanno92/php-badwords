@@ -29,7 +29,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
                     </p> 
                 </div>
                 <div>
-                   Lungheza del Paragrafo :
+                   Lunghezza del Paragrafo :
                     <p>
                         <?php echo strlen($_GET['paragraph']); ?> 
                     </p> 
